@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, redirect
 import requests
-API_KEY = ''
+API_KEY = '300487ff0414ae9b4a58b0ee'
 
 
 def getMoedas():
@@ -26,10 +26,10 @@ def index():
     if request.method == 'POST':
         moeda1 = request.form['moeda1']
         moeda2 = request.form['moeda2']
-        quantia = request.form['quantia']
-
-        if quantia.replace(",", "").isnumeric() == True:
-            quantia_float = float(quantia)
+        quantia_str = request.form['quantia']
+        quantia_str.replace(",",".")
+        if quantia_str.replace(".", "").isnumeric() == True:
+            quantia_float = float(quantia_str)
         else:
             quantia_float = 1.0
 

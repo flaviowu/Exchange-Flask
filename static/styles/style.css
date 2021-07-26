@@ -40,7 +40,7 @@ section form div#de-moeda {
 
 section form div#de-moeda input {
     width: 98%;
-    height: 1.5rem;
+    height: 2rem;
 }
 
 section form div#para-moeda {
@@ -52,6 +52,7 @@ section form div#para-moeda {
 section form div#para-moeda button{
     background-color: black;
     color: #fff;
+    border-radius: 5rem;
     width: 10rem;
     height: 3rem;
     margin: 2.5rem 0 0 0;

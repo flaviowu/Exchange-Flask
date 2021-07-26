@@ -27,7 +27,7 @@ def index():
         moeda1 = request.form['moeda1']
         moeda2 = request.form['moeda2']
         quantia_str = request.form['quantia']
-        quantia_str.replace(",",".")
+        quantia_str = quantia_str.replace(",",".")
         if quantia_str.replace(".", "").isnumeric() == True:
             quantia_float = float(quantia_str)
         else:
@@ -35,7 +35,6 @@ def index():
 
         cambio = getCotacao({'de': moeda1, 'para': moeda2})
         quantia_convertida = round(quantia_float * cambio, 4)
-        str
         resultado = str(f"{moeda1} {quantia_float:.2f} = {moeda2} {quantia_convertida}")
         return render_template('index.html', moedas=moedas, resultado=resultado)
 

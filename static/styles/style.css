@@ -16,12 +16,18 @@ header {
 }
 
 section {
+    background-color: cadetblue;
+    border-radius: 15px;
     height: 90%;
     padding: 2rem;
 }
 
 section h2{
+    background-color: #fff;
+    height: 2.5rem;
+    border-radius: 15px;
     text-align: center;
+    padding: .5rem 0 0 0;
 }
 
 

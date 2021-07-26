@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, redirect
 import requests
-API_KEY = ''
+API_KEY = '300487ff0414ae9b4a58b0ee'
 
 
 def getMoedas():

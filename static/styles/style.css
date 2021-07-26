@@ -9,7 +9,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 header {
@@ -63,5 +62,15 @@ section form div#para-moeda button{
 section form div#para-moeda button:hover{
     transform: scale(1.25);
     cursor: pointer;
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+}
+
+footer p {
+    font-size: 9px;
+    text-align: center;
 }
 

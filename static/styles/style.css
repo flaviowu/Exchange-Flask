@@ -16,7 +16,7 @@ header {
 }
 
 section {
-    background-color: cadetblue;
+    background-color: rgba(95, 158, 160, 0.75);
     border-radius: 15px;
     height: 90%;
     padding: 2rem;
@@ -35,6 +35,10 @@ section form{
     display: flex;
     flex-direction: column;
 }
+section form div select {
+    height: 2.3rem;
+    width: 20rem;
+}
 
 section form div#de-moeda {
     display: flex;
@@ -44,8 +48,8 @@ section form div#de-moeda {
 }
 
 section form div#de-moeda input {
-    width: 98%;
-    height: 2rem;
+    width: 19.5rem;
+    height: 1.8rem;
 }
 
 section form div#para-moeda {
@@ -80,3 +84,6 @@ footer p {
     text-align: center;
 }
 
+footer p a{
+text-decoration: none;
+}
